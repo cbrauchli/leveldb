@@ -1,6 +1,6 @@
 {
   "name": "leveldb-library",
-  "version": "1.18.0",
+  "version": "1.18.1",
   "license": "New BSD",
   "summary": "A fast key-value storage library",
   "description": "LevelDB is a fast key-value storage library written at Google that provides an ordered mapping from string keys to string values.",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/cbrauchli/leveldb.git",
-    "tag": "v1.18.0"
+    "tag": "v1.18.1"
   },
   "requires_arc": false,
   "compiler_flags": [
@@ -42,6 +42,7 @@
   "exclude_files": [
     "**/*_test.cc",
     "**/*_bench.cc",
+    "**/leveldb_main.cc",
     "port/win"
   ]
 }
