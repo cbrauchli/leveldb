@@ -54,7 +54,7 @@ namespace port {
 #define LEVELDB_HAVE_MEMORY_BARRIER
 
 // Mac OS
-#elif defined(OS_MACOSX)
+#elif defined(OS_MACOSX) && !defined(LEVELDB_ATOMIC_PRESENT)
 inline void MemoryBarrier() {
   OSMemoryBarrier();
 }

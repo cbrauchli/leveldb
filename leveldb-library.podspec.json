@@ -17,7 +17,8 @@
   "requires_arc": false,
   "compiler_flags": [
     "-DOS_MACOSX",
-    "-DLEVELDB_PLATFORM_POSIX"
+    "-DLEVELDB_PLATFORM_POSIX",
+    "-DLEVELDB_ATOMIC_PRESENT"
   ],
   "preserve_paths": [
     "db",
